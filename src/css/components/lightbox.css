@@ -2,19 +2,34 @@
 * Lightbox
 */
 dialog {
+    
     border-radius: 20px;
     border-color: rgb(0, 0, 0);
     padding: 10px;
     background-color: rgb(255, 255, 255);
+    animation: entry 1s forwards;
 }
 
 dialog::backdrop {
-    background-color: rgba(250, 163, 33, 0.5);
-    backdrop-filter: blur(10px);
+    background-color: rgba(238, 255, 0, 0.5);
+    backdrop-filter: blur(2px);
 }
 
 dialog img {
     border-radius: 10px;
     width: 100%;
     height: auto;
+}
+
+@keyframes entry {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+
+ul {
+    list-style: none;
 }
