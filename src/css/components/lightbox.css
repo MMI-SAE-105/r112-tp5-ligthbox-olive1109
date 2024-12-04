@@ -3,7 +3,18 @@
 */
 dialog {
     border-radius: 20px;
+    border-color: rgb(0, 0, 0);
     padding: 10px;
     background-color: rgb(255, 255, 255);
 }
 
+dialog::backdrop {
+    background-color: rgba(250, 163, 33, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+dialog img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
